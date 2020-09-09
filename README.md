@@ -5,7 +5,7 @@ Sebuah Telegram Bot yang saya buat karena gabut menggunakan kode program python3
   - Quote Maker (Membuat image quote)
   - Kasus Corona info di Indonesia
 
-demo : [t.me/rhxx_bot](t.me/rhxx_bot)
+demo : [t.me/rhxx_bot](https://t.me/rhxx_bot)
 
 
 
