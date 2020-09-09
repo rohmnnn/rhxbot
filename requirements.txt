@@ -1,0 +1,7 @@
+Flask==1.1.1
+pyTelegramBotAPI==3.6.6
+Pillow==7.2.0
+googletrans==3.0.0 
+spotdl==2.2.2
+git+https://gitlab.com/obuilds/public/pytube@ob-v1
+moviepy==1.0.3
