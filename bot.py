@@ -297,6 +297,8 @@ def query_handler(call):
          ytku.streams.get_by_itag(18).download()
          name = str(ytku.title).replace('.','').replace('|','')+'.mp4'
          name2 = str(ytku.title)+'.mp3'
+         cmd = ['ffmpeg', '-i', name, '-vn', '-f','mp3',name2]
+         subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
          audio = open(name2, 'rb')
          bot.send_audio(call.message.chat.id, audio)
       except AttributeError:
@@ -349,6 +351,8 @@ def query_handler(call):
             ytku.streams.get_by_itag(18).download()
             name = str(ytku.title).replace('.','').replace('|','')+'.mp4'
             name2 = str(ytku.title)+'.mp3'
+            cmd = ['ffmpeg', '-i', name, '-vn', '-f','mp3',name2]
+            subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             audio = open(name2, 'rb')
             bot.send_audio(call.message.chat.id, audio)
          except AttributeError:
