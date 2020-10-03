@@ -180,8 +180,8 @@ def send_info_corona(message):
    txt = message.text.replace('/corona ','',1)
    txt = str(txt)
    if txt == '/corona':
-      r = requests.get('https://indonesia-covid-19.mathdro.id/api') #API kasus Covid-19 di Indonesia by. mathdroid
-      data = r.json()
+      ra = requests.get('https://indonesia-covid-19.mathdro.id/api') #API kasus Covid-19 di Indonesia by. mathdroid
+      data = ra.json()
       text = (
          "<b>Indonesia Kasus Covid-19\n\n"
          "Total Kasus : "+str(data['jumlahKasus'])+"\n"
